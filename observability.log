@@ -1,0 +1,22 @@
+2026-05-02 20:37:53,965 [INFO] matplotlib.font_manager — generated new fontManager
+2026-05-02 20:37:54,386 [INFO] main — ============================================================
+2026-05-02 20:37:54,386 [INFO] main — SNOWFLAKE OBSERVABILITY PIPELINE — START
+2026-05-02 20:37:54,386 [INFO] main — ============================================================
+2026-05-02 20:37:54,386 [INFO] main — STEP 1: Using SYNTHETIC data (Snowflake connection skipped).
+2026-05-02 20:37:54,390 [INFO] main —   Fetched: 500 queries, 10 tables, 24 null-rate rows, 0 load records
+2026-05-02 20:37:54,390 [INFO] main — STEP 2: Running Isolation Forest anomaly detection...
+2026-05-02 20:37:54,733 [INFO] anomaly_detector — QueryAnomalyDetector: 25/500 queries flagged (5.0%)
+2026-05-02 20:37:54,841 [INFO] anomaly_detector — VolumeAnomalyDetector: 1/10 tables flagged.
+2026-05-02 20:37:54,841 [INFO] main —   Anomalies — Queries: 25, Tables: 1
+2026-05-02 20:37:54,841 [INFO] main — STEP 3: Alerting skipped (synthetic mode — no Snowflake writes).
+2026-05-02 20:37:54,841 [INFO] main — STEP 4: Generating Matplotlib observability dashboard...
+2026-05-02 20:37:56,804 [INFO] main — ============================================================
+2026-05-02 20:37:56,805 [INFO] main — PIPELINE COMPLETE — Summary:
+2026-05-02 20:37:56,805 [INFO] main —   queries_checked           500
+2026-05-02 20:37:56,805 [INFO] main —   query_anomalies           25
+2026-05-02 20:37:56,805 [INFO] main —   volume_anomalies          1
+2026-05-02 20:37:56,807 [INFO] main —   schema_drifts             0
+2026-05-02 20:37:56,807 [INFO] main —   null_surges               0
+2026-05-02 20:37:56,811 [INFO] main —   load_failures             0
+2026-05-02 20:37:56,811 [INFO] main —   total_incidents           25
+2026-05-02 20:37:56,811 [INFO] main — ============================================================
